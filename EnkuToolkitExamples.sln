@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.MessageBoxService", "07.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.AbstractNavigationService", "08.AbstractNavigationService\08.AbstractNavigationService.csproj", "{6944980A-CDED-46A1-AAF0-32613F50317F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.MainNavigationWindowNavigationService", "09.MainNavigationWindowNavigationService\09.MainNavigationWindowNavigationService.csproj", "{27F9AE2F-9120-497E-B096-407DD6CB3885}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{6944980A-CDED-46A1-AAF0-32613F50317F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6944980A-CDED-46A1-AAF0-32613F50317F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6944980A-CDED-46A1-AAF0-32613F50317F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27F9AE2F-9120-497E-B096-407DD6CB3885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F9AE2F-9120-497E-B096-407DD6CB3885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27F9AE2F-9120-497E-B096-407DD6CB3885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27F9AE2F-9120-497E-B096-407DD6CB3885}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
