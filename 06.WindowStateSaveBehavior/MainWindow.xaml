@@ -1,0 +1,15 @@
+﻿<Window x:Class="_06.WindowStateSaveBehavior.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_06.WindowStateSaveBehavior"
+        xmlns:et="https://github.com/StdEnku/EnkuToolkit/Wpf/Controls"
+        et:WindowStateSaveBehavior.IsStateSave="True"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Viewbox>
+        <Label Content="Hello World!" />
+    </Viewbox>
+</Window>
