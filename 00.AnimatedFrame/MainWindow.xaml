@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_00.AnimatedFrame"
         mc:Ignorable="d"
-        xmlns:et="https://github.com/StdEnku/EnkuToolkit/Wpf/Controls"
+        xmlns:et="https://github.com/StdEnku/EnkuToolkit"
         Title="MainWindow" Height="450" Width="800">
 
     <DockPanel LastChildFill="True">
