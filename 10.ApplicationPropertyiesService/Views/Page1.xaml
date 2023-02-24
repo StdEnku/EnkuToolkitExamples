@@ -12,8 +12,15 @@
 
     <StackPanel VerticalAlignment="Center">
         <TextBlock HorizontalAlignment="Center" >
-            The string entered below will be assigned to Application.Properties["MyText"].<LineBreak />
-            Page2 conversely displays the string obtained from Application.Properties["MyText"].
+            [En]<LineBreak />
+            The string entered below is assigned to Application.Properties["MyText"].<LineBreak />
+            Page2 conversely displays the string obtained from Application.Properties["MyText"].<LineBreak />
+            (Note: We are not passing parameters during screen transitions, we are just sharing data with Application as the scope.)<LineBreak />
+            <LineBreak />
+            [Jp]<LineBreak />
+            下記に入力した文字列がApplication.Properties["MyText"]に代入される。<LineBreak />
+            Page2では逆に、Application.Properties["MyText"]から得られた文字列を表示する。<LineBreak />
+            (注意 : 画面遷移時にパラメータを渡しているわけではなく、Applicationをスコープとするデータの共有をしているだけです。)
         </TextBlock>
         
         <TextBox Text="{Binding MyText, Mode=TwoWay}" Margin="30" />
