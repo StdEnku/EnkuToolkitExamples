@@ -1,0 +1,23 @@
+﻿<Page x:Class="_10.ApplicationPropertyiesService.Views.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_10.ApplicationPropertyiesService.Views"
+      xmlns:vm="clr-namespace:_10.ApplicationPropertyiesService.ViewModels"
+      DataContext="{x:Static vm:ViewModels.Page1ViewModel}"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page1">
+
+    <StackPanel VerticalAlignment="Center">
+        <TextBlock HorizontalAlignment="Center" >
+            The string entered below will be assigned to Application.Properties["MyText"].<LineBreak />
+            Page2 conversely displays the string obtained from Application.Properties["MyText"].
+        </TextBlock>
+        
+        <TextBox Text="{Binding MyText, Mode=TwoWay}" Margin="30" />
+        
+        <Button Content="To Page2" Margin="30" DockPanel.Dock="Bottom" Command="{Binding ClickedCommand}" />
+    </StackPanel>
+</Page>
