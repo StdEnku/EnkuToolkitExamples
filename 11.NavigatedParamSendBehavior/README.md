@@ -1,5 +1,7 @@
 # NavigatedParamSendBehavior
 
+![gif1](./imgs/gif1.gif)
+
 ## 備考
 
 FrameやNavigationWindowにて画面遷移を行う際に前の画面から渡されたパラメータをViewModelで取得するためのビヘイビア
