@@ -1,7 +1,5 @@
 # AbstractNavigationService
 
-![img1](./imgs/gif1.gif)
-
 ## 備考
 
 MainWindow内のFrameなどをViewModelから画面遷移させるためのViewService
