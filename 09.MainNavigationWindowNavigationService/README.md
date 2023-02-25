@@ -1,5 +1,11 @@
 # MainNavigationWindowNavigationService
 
+注意点:本サンプルではEnkuToolkit.Wpfのほかに以下のサードパーティ製ライブラリを使用しています。
+
+- [CommunityToolkit.Mvvm](https://www.nuget.org/packages/CommunityToolkit.Mvvm)
+- [EnkuViewModelLocator.Wpf](https://www.nuget.org/packages/EnkuViewModelLocator.Wpf)
+- [Microsoft.Extensions.DependencyInjection](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection/8.0.0-preview.1.23110.8)
+
 ## 備考
 
 App.Current.MainWindowがNavigationWindowの場合使用可能なViewModelから画面遷移させるためのViewService
