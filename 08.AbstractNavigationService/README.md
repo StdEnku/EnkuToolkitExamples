@@ -48,7 +48,7 @@ bool NavigateRootBase(string uriStr, object? extraData = null);
 
 プロジェクトのルートフォルダをベースURIとして遷移先のURIを指定できる画面遷移用メソッド
 
-戻り値 : 画面遷移がキャンセルされたらfalse、キャンセルされなければtrueを返す<br/>uriStr : 遷移先ページへの相対URI<br/>extraData : 遷移先に渡したいデータ[NavigatedParamSendBehavior](https://github.com/StdEnku/EnkuToolkitExamples/tree/main/11.NavigatedParamSendBehavior)を使用して遷移先のViewModelで受け取ることを想定している。
+戻り値 : 画面遷移がキャンセルされたらfalse、キャンセルされなければtrueを返す<br/>uriStr : 遷移先ページへの相対URI<br/>extraData : 遷移先に渡したいデータ、[NavigatedParamSendBehavior](https://github.com/StdEnku/EnkuToolkitExamples/tree/main/11.NavigatedParamSendBehavior)を使用して遷移先のViewModelで受け取ることを想定している。
 
 
 
@@ -60,7 +60,7 @@ bool Navigate(Uri uri, object? extraData = null);
 
 遷移先のURIを指定して画面遷移を行うためのメソッド
 
-戻り値 : 画面遷移がキャンセルされたらfalse、キャンセルされなければtrueを返す<br/>uri : 遷移先ページへURI<br/>extraData : 遷移先に渡したいデータ[NavigatedParamSendBehavior](https://github.com/StdEnku/EnkuToolkitExamples/tree/main/11.NavigatedParamSendBehavior)を使用して遷移先のViewModelで受け取ることを想定している。
+戻り値 : 画面遷移がキャンセルされたらfalse、キャンセルされなければtrueを返す<br/>uri : 遷移先ページへURI<br/>extraData : 遷移先に渡したいデータ、[NavigatedParamSendBehavior](https://github.com/StdEnku/EnkuToolkitExamples/tree/main/11.NavigatedParamSendBehavior)を使用して遷移先のViewModelで受け取ることを想定している。
 
 
 
