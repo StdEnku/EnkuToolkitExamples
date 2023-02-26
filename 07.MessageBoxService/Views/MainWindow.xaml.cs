@@ -1,4 +1,6 @@
 ﻿namespace _07.MessageBoxService.Views;
+
+using _07.MessageBoxService.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,5 +23,7 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        var services = App.Current.Services;
+        this.DataContext = services.GetService(typeof(MainWindowViewModel));
     }
 }

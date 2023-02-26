@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using _10.ApplicationPropertyiesService.ViewModels;
 
 /// <summary>
 /// Page1.xaml の相互作用ロジック
@@ -22,5 +23,7 @@ public partial class Page1 : Page
     public Page1()
     {
         InitializeComponent();
+        var services = App.Current.Services;
+        this.DataContext = services.GetService(typeof(Page1ViewModel));
     }
 }

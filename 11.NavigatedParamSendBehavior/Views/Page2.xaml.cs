@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using _11.NavigatedParamSendBehavior.ViewModels;
 
 /// <summary>
 /// Page2.xaml の相互作用ロジック
@@ -22,5 +23,7 @@ public partial class Page2 : Page
     public Page2()
     {
         InitializeComponent();
+        var services = App.Current.Services;
+        this.DataContext = services.GetService(typeof(Page2ViewModel));
     }
 }

@@ -1,4 +1,6 @@
 ﻿namespace _08.AbstractNavigationService.Views;
+
+using _08.AbstractNavigationService.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,5 +24,7 @@ public partial class Page2 : Page
     public Page2()
     {
         InitializeComponent();
+        var services = App.Current.Services;
+        this.DataContext = services.GetService(typeof(Page2ViewModel));
     }
 }

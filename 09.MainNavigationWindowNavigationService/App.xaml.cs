@@ -2,13 +2,12 @@
 
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Reflection;
 using System.Windows;
 using EnkuToolkit.UiIndependent.Services;
-using EnkuViewModelLocator.Wpf;
 using EnkuToolkit.Wpf.Services;
+using _09.MainNavigationWindowNavigationService.ViewModels;
 
-public partial class App : Application, IDiApplication
+public partial class App : Application
 {
     public App()
     {
@@ -24,16 +23,8 @@ public partial class App : Application, IDiApplication
     {
         var services = new ServiceCollection();
 
-        var assembly = Assembly.GetExecutingAssembly();
-        var vmWithLifeTime = SearchViewModelService.FromAssembly(assembly);
-        foreach (var i in vmWithLifeTime)
-        {
-            if (i.LifeTime == ViewModelAttribute.ServiceLifeTime.Transient)
-                services.AddTransient(i.ViewModelType);
-            else
-                services.AddSingleton(i.ViewModelType);
-        }
-
+        services.AddTransient<Page1ViewModel>();
+        services.AddTransient<Page2ViewModel>();
         services.AddTransient<INavigationService, MainNavigationWindowNavigationService>();
 
         return services.BuildServiceProvider();

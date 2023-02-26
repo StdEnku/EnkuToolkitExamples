@@ -1,11 +1,9 @@
 ﻿namespace _07.MessageBoxService.ViewModels;
 
-using EnkuViewModelLocator.Wpf;
 using CommunityToolkit.Mvvm.ComponentModel;
 using EnkuToolkit.UiIndependent.Services;
 using CommunityToolkit.Mvvm.Input;
 
-[ViewModel]
 public partial class MainWindowViewModel : ObservableObject
 {
     private readonly IMessageBoxService _messageBoxService;
