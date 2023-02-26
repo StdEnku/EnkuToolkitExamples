@@ -53,7 +53,7 @@ public class Page2ViewModel : INotifyPropertyChanged, INavigatedParamReceive
     // 画面遷移後に実行されるメソッド
     public void Navigated(object? extraData)
     {
-        this.MyText = extraData as string ?? string.Empty;
+        // 引数extraDataが渡されたパラメータ
     }
 }
 ```
