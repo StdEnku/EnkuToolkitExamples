@@ -1,8 +1,6 @@
 ﻿namespace _12.ViewModelProviderExtension;
 
 using _12.ViewModelProviderExtension.ViewModels;
-using EnkuToolkit.UiIndependent.Services;
-using EnkuToolkit.Wpf.Services;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Windows;
@@ -15,8 +13,6 @@ public partial class App : Application, IServicesOwner
         this.Services = ConfigureServices();
         this.InitializeComponent();
     }
-
-    public new static App Current => (App)Application.Current;
 
     public IServiceProvider Services { get; }
 
