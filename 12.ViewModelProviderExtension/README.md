@@ -8,15 +8,24 @@
 - [Microsoft.Extensions.DependencyInjection](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection/8.0.0-preview.1.23110.8)
 
 ## 備考
-近いうちに書きます。
+DIコンテナからViewModelのオブジェクトを生成するためのマークアップ拡張
+
 
 
 ## クラス情報
-近いうちに書きます。
+
+### マークアップ拡張
+
+名前空間 : `EnkuToolkit.Wpf.MarkupExtensions`<br/>アセンブリ : `EnkuToolkit.Wpf`<br/>xml名前空間 : `https://github.com/StdEnku/EnkuToolkit`
+
+### Appクラスにて実装しなければならないインターフェース
+
+インターフェース名 : IServicesOwner<br/>名前空間 : `EnkuToolkit.Wpf.MarkupExtensions`<br/>アセンブリ : `EnkuToolkit.Wpf`<br/>
+
+
 
 
 ## 使い方
-近いうちに書きます。
 
 
 

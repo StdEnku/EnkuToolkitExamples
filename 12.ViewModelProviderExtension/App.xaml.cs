@@ -23,8 +23,8 @@ public partial class App : Application, IServicesOwner
     private static IServiceProvider ConfigureServices()
     {
         var services = new ServiceCollection();
+
         services.AddTransient<MainWindowViewModel>();
-        services.AddTransient<INavigationService, MainNavigationWindowNavigationService>();
 
         return services.BuildServiceProvider();
     }
