@@ -64,7 +64,7 @@ public partial class App : Application
 
 
 
-次にそのAppクラスに`IServicesOwner`インターフェースを継承してください<br/>このインターフェースのメンバーはSystem.IServiceProvider型のプロパティのみです<br/>
+次にそのAppクラスに`IServicesOwner`インターフェースを継承してください<br/>このインターフェースのメンバーはDIコンテナのServiceProviderを返すための<br/>System.IServiceProvider型のプロパティのみです<br/>
 
 ```c#
 IServiceProvider Services { get; }
