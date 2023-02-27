@@ -133,7 +133,7 @@ Page1.xaml
       xmlns:et="https://github.com/StdEnku/EnkuToolkit"
       xmlns:vm="clr-namespace:To.ViewModel.Path"
       DataContext="{et:ViewModelProvider vm:HogePageViewModel}"
-      d:DataContext="{d:DesignInstance vm:MainWindowViewModel}">
+      d:DataContext="{d:DesignInstance vm:HogePageViewModel}">
 
 </Page>
 ```
