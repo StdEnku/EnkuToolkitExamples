@@ -44,25 +44,24 @@ FrameやNavigationWindowにて画面遷移を行う際に前の画面から渡�
 ```c#
 ~省略~
 using EnkuToolkit.UiIndependent.ViewModelInterfaces;
-using EnkuToolkit.UiIndependent.Constants;
 
 public class Page2ViewModel : INotifyPropertyChanged, INavigatedParamReceive
 {
     ~省略~
     
     // 画面遷移後に実行されるメソッド
-    public void Navigated(object? extraData, NavigationMode mode)
+    public void Navigated(object extraData)
     {
         // 引数extraDataが渡されたパラメータ
     }
 }
 ```
 
-そのメソッドの引数extraDataからはパラメータを取得でき、引数modeからは画面遷移の種類を取得できます。
+そのメソッドの引数extraDataからはパラメータを取得できます。
 
 
 
-パラメータの送信側では本ライブラリの[INavigationService](../08.AbstractNavigationService/README.md)の画面遷移系メソッドの引数<br/>extraDataに送信したいデータをセットするか、<br/>Frame/NavigationWindowクラスの[Navigateメソッド](https://learn.microsoft.com/ja-jp/dotnet/api/system.windows.controls.frame.navigate?view=windowsdesktop-7.0#system-windows-controls-frame-navigate(system-uri-system-object))の引数extraDataに<br/>送信したいデータをセットして送信してください。
+パラメータの送信側では本ライブラリの[INavigationService](../08.AbstractNavigationService/README.md)の画面遷移系メソッドの引数<br/>extraDataに送信したいデータをセットするか、<br/>Frame/NavigationWindowクラスの[Navigateメソッド](https://learn.microsoft.com/ja-jp/dotnet/api/system.windows.controls.frame.navigate?view=windowsdesktop-7.0#system-windows-controls-frame-navigate(system-uri-system-object))の引数extraDataに<br/>送信したいデータをセットして送信してください。<br/>尚extraDataが渡されていないor渡されてはいるがNULLの場合<br/>遷移先のViewModelにて実装したNavigatedメソッドは実行されません。
 
 ```c#
 using EnkuToolkit.UiIndependent.Services;
