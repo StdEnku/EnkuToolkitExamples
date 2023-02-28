@@ -17,7 +17,7 @@ public partial class Page2ViewModel : ObservableObject, INavigatedParamReceive
     [ObservableProperty]
     private string myText = string.Empty;
 
-    public void Navigated(object extraData)
+    public void Navigated(object? extraData)
     {
         this.MyText = (string)extraData;
     }
