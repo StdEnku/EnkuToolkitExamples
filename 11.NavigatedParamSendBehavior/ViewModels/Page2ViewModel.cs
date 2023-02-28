@@ -19,7 +19,8 @@ public partial class Page2ViewModel : ObservableObject, INavigatedParamReceive
 
     public void Navigated(object? extraData)
     {
-        this.MyText = (string)extraData;
+        if (extraData is string textParam)
+            this.MyText = textParam;
     }
 
     [RelayCommand]
