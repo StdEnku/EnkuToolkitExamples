@@ -93,7 +93,7 @@ void Refresh();
 
 
 
-#### RempveBackEntryメソッド
+#### RemoveBackEntryメソッド
 
 ```c#
 void RemoveBackEntry();
@@ -113,13 +113,13 @@ void StopLoading();
 
 
 
-#### removeAllHistoryメソッド
+#### RemoveAllBackEntryメソッド
 
 ```c#
-void RemoveAllHistory();
+void RemoveAllBackEntry();
 ```
 
-ナビゲーション履歴をすべて削除するためのメソッド
+履歴から以前表示されていたページの履歴をすべて削除するためのメソッド
 
 
 
