@@ -4,7 +4,6 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using EnkuToolkit.UiIndependent.Services;
 using EnkuToolkit.UiIndependent.ViewModelInterfaces;
-using EnkuToolkit.UiIndependent.Constants;
 
 public partial class Page2ViewModel : ObservableObject, INavigatedParamReceive
 {
@@ -18,9 +17,9 @@ public partial class Page2ViewModel : ObservableObject, INavigatedParamReceive
     [ObservableProperty]
     private string myText = string.Empty;
 
-    public void Navigated(object? extraData, NavigationMode mode)
+    public void Navigated(object extraData)
     {
-        this.MyText = extraData as string ?? string.Empty;
+        this.MyText = (string)extraData;
     }
 
     [RelayCommand]
