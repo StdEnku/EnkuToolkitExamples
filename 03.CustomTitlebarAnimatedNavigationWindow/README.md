@@ -31,14 +31,14 @@ ResizeBorderThicknessプロパティを持ちます。
     xmlns:et="https://github.com/StdEnku/EnkuToolkit"
     ResizeBorderThickness="20, 0, 20, 20">
 
-    <et:CustomTitlebarWindow.Titlebar>
+    <et:CustomTitlebarAnimatedNavigationWindow.Titlebar>
         <!--タイトルバーの内容-->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Height="50">
             <Button Content="_" Click="MinimizeButtonClicked" Width="50" et:TitlebarComponentsBehavior.IsHitTestVisible="True" />
             <Button Content="□" Click="MaximizeButtonClicked" Width="50" et:TitlebarComponentsBehavior.IsHitTestVisible="True" />
             <Button Content="×" Click="ShutdownButtonClicked" Width="50" et:TitlebarComponentsBehavior.IsHitTestVisible="True" />
         </StackPanel>
-    </et:CustomTitlebarWindow.Titlebar>
+    </et:CustomTitlebarAnimatedNavigationWindow.Titlebar>
 
 </et:CustomTitlebarAnimatedNavigationWindow>
 ```
