@@ -26,7 +26,7 @@ FrameworkElement型のTitlebarプロパティを持ち、
 ResizeBorderThicknessプロパティを持ちます。
 
 ```xaml
-<et:CustomTitlebarWindow
+<et:CustomTitlebarAnimatedNavigationWindow
     ~省略~
     xmlns:et="https://github.com/StdEnku/EnkuToolkit"
     ResizeBorderThickness="20, 0, 20, 20">
@@ -40,11 +40,7 @@ ResizeBorderThicknessプロパティを持ちます。
         </StackPanel>
     </et:CustomTitlebarWindow.Titlebar>
 
-    <!--Contentプロパティは通常のWindowと同じように書ける-->
-    <Viewbox>
-        <Label Content="Hello World!" />
-    </Viewbox>
-</et:CustomTitlebarWindow>
+</et:CustomTitlebarAnimatedNavigationWindow>
 ```
 
 注意点 :
