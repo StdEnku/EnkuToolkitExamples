@@ -7,6 +7,7 @@
     xmlns:local="clr-namespace:_02.CustomTitlebarWindow"
     xmlns:et="https://github.com/StdEnku/EnkuToolkit"
     mc:Ignorable="d"
+    ResizeBorderThickness="20, 0, 20, 20"
     Title="MainWindow" Height="450" Width="800">
 
     <et:CustomTitlebarWindow.Titlebar>
