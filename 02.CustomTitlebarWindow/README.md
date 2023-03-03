@@ -29,9 +29,9 @@
     <et:CustomTitlebarWindow.Titlebar>
         <!--タイトルバーの内容-->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Height="50">
-            <Button Content="_" Click="MinimizeButtonClicked" Width="50" et:TitlebarComponentsBehavior.IsHitTestVisible="True" />
-            <Button Content="□" Click="MaximizeButtonClicked" Width="50" et:TitlebarComponentsBehavior.IsHitTestVisible="True" />
-            <Button Content="×" Click="ShutdownButtonClicked" Width="50" et:TitlebarComponentsBehavior.IsHitTestVisible="True" />
+            <Button Content="_" Click="MinimizeButtonClicked" Width="50" WindowChrome.IsHitTestVisibleInChrome="True" />
+            <Button Content="□" Click="MaximizeButtonClicked" Width="50" WindowChrome.IsHitTestVisibleInChrome="True" />
+            <Button Content="×" Click="ShutdownButtonClicked" Width="50" WindowChrome.IsHitTestVisibleInChrome="True" />
         </StackPanel>
     </et:CustomTitlebarWindow.Titlebar>
 
@@ -50,7 +50,7 @@
 >
 > クリック等の操作ができないため対象のボタンなどに
 >
-> TitlebarComponentsBehavior.IsHitTestVisible添付プロパティを
+> WindowChrome.IsHitTestVisibleInChrome添付プロパティを
 >
 > 添付して、その値にtrueを指定してください。
 
